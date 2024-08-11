@@ -1,6 +1,7 @@
 import SimpleLightbox from 'simplelightbox';
 import 'simplelightbox/dist/simple-lightbox.min.css';
 
+const galleryList = document.querySelector('.gallery-list');
 const lightbox = new SimpleLightbox('.gallery-list a', {
   captions: true,
   captionsData: 'alt',
@@ -8,8 +9,6 @@ const lightbox = new SimpleLightbox('.gallery-list a', {
 });
 
 export function createImages(data) {
-  const galleryList = document.querySelector('.gallery-list');
-
   let images = data.hits
     .map(
       image =>
@@ -32,6 +31,5 @@ export function createImages(data) {
 }
 
 export function clearImages() {
-  const galleryList = document.querySelector('.gallery-list');
   galleryList.innerHTML = '';
 }

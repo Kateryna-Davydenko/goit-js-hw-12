@@ -69,18 +69,19 @@
 }
 
 .image-gallery {
-  width: 360px;
   margin-top: 48px;
   border: 1px solid #808080;
   display: flex;
   flex-direction: column;
+  gap: 24px;
 }
 
+.image-wrapper {
+}
 .text-gallery {
   display: flex;
   flex-direction: row;
   gap: 24px 24px;
-  width: 360px;
   height: 48px;
   justify-content: space-evenly;
 }
@@ -136,23 +137,6 @@
   animation: rotation 1.5s linear infinite;
 }
 
-@keyframes rotation {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-@keyframes rotationBack {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(-360deg);
-  }
-}
-
 .hidden {
   display: none;
 }
@@ -173,4 +157,20 @@
 
 .load-more {
   color: #fff;
+}
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotationBack {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
 }
