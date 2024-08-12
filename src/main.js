@@ -47,6 +47,7 @@ async function fetchImages() {
       });
       return;
     }
+
     createImages(data);
     if (data.hits.length === 0 || currentPage * 15 >= data.totalHits) {
       loadMoreBtn.classList.add('hidden');
