@@ -68,7 +68,10 @@
   margin-top: 24px;
 }
 
-/* .image-gallery {
+.image-wrapper {
+  width: 360px;
+}
+.image-gallery {
   margin-top: 48px;
   border: 1px solid #808080;
   display: flex;
@@ -135,14 +138,14 @@
   animation: rotation 1.5s linear infinite;
 }
 
-.hidden {
-  display: none;
-}
-
 .gallery-container {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.loader {
+  margin: auto;
 }
 .load-more-button {
   border-radius: 8px;
@@ -153,7 +156,7 @@
   background: #4e75ff;
 }
 
-.load-more {
+.load-more-button {
   color: #fff;
 }
 @keyframes rotation {
@@ -171,118 +174,7 @@
   100% {
     transform: rotate(-360deg);
   }
-} */
-
-.image-wrapper {
-  width: 360px;
-  height: 200px;
-  flex-shrink: 0;
-  /* border: 1px solid #808080; */
 }
-.gallery-img {
-  width: 360px;
-  height: 152px;
-  object-fit: cover;
-}
-.text-wrapper {
-  display: flex;
-  flex-direction: row;
-  gap: 32px;
-  justify-content: center;
-  width: 360px;
-  height: 48px;
-  flex-shrink: 0;
-  border-right: 1px solid #808080;
-  border-bottom: 1px solid #808080;
-  border-left: 1px solid #808080;
-  background: #fff;
-}
-.text-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.text-header {
-  color: #2e2f42;
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 16px;
-  letter-spacing: 0.48px;
-  padding-top: 4px;
-}
-
-.text-paragraph {
-  color: #2e2f42;
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0.48px;
-}
-
-/* ============================CSS LOADERS======================== */
-
-.loader {
-  margin-left: 681px;
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
-  display: inline-block;
-  position: relative;
-  border: 3px solid;
-  border-color: #fff #fff transparent transparent;
-  box-sizing: border-box;
-  animation: rotation 1s linear infinite;
-}
-.loader::after,
-.loader::before {
-  content: '';
-  box-sizing: border-box;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  margin: auto;
-  border: 3px solid;
-  border-color: transparent transparent #ff3d00 #ff3d00;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  box-sizing: border-box;
-  animation: rotationBack 0.5s linear infinite;
-  transform-origin: center center;
-}
-.loader::before {
-  width: 32px;
-  height: 32px;
-  border-color: #fff #fff transparent transparent;
-  animation: rotation 1.5s linear infinite;
-}
-
-@keyframes rotation {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-@keyframes rotationBack {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(-360deg);
-  }
-}
-
-.hidden {
-  display: none;
-}
-
 .hidden {
   display: none;
 }
