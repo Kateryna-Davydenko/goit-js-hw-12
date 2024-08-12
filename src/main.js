@@ -47,7 +47,6 @@ async function fetchImages() {
       });
       return;
     }
-
     createImages(data);
     if (data.hits.length === 0 || currentPage * 15 >= data.totalHits) {
       loadMoreBtn.classList.add('hidden');
@@ -61,7 +60,7 @@ async function fetchImages() {
     smoothScroll();
     showScrollToTopBtn();
   } catch (error) {
-    console.error(error);
+    izitoast.error(error);
     loader.classList.add('hidden');
   }
 }
