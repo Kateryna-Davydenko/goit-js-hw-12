@@ -60,7 +60,7 @@ async function fetchImages() {
     smoothScroll();
     showScrollToTopBtn();
   } catch (error) {
-    console.error(error);
+    iziToast.error(error);
     loader.classList.add('hidden');
   }
 }
