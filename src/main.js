@@ -7,7 +7,7 @@ import { createImages, clearImages } from './js/render-functions';
 const form = document.querySelector('.form-gallery');
 const input = document.querySelector('.form-gallery-input');
 const loader = document.querySelector('.loader');
-const loadMoreBtn = document.querySelector('.load-more');
+const loadMoreBtn = document.querySelector('.load-more-btn');
 const scrollToTopBtn = document.querySelector('.scroll-to-top');
 
 let currentPage = 1;

@@ -147,7 +147,7 @@
 .loader {
   margin: auto;
 }
-.load-more-button {
+.load-more-btn {
   border-radius: 8px;
   border: none;
   padding: 8px 16px;
@@ -156,7 +156,7 @@
   background: #4e75ff;
 }
 
-.load-more-button {
+.load-more-btn {
   color: #fff;
 }
 @keyframes rotation {
